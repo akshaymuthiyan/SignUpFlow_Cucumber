@@ -74,12 +74,12 @@ public class Steps {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
         try {
-            // Wait for and click the customer menu toggle (user icon)
+            
             WebElement menuToggle = wait.until(ExpectedConditions.elementToBeClickable(
                     By.cssSelector("button[data-action='customer-menu-toggle']")));
             menuToggle.click();
 
-            // Wait for and click the Sign Out link that appears in dropdown
+
             WebElement signOutLink = wait.until(ExpectedConditions.elementToBeClickable(
                     By.cssSelector("a[href*='customer/account/logout/']")));
             signOutLink.click();
