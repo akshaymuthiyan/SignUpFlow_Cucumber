@@ -1,5 +1,4 @@
 Feature: Create an Account
-
   Scenario: Successful Account Created with Valid Credentials
     Given User launches Chrome browser
     When User opens URL "https://magento.softwaretestingboard.com/"
